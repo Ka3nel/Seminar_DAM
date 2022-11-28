@@ -1,0 +1,15 @@
+<resources>
+    <string name="app_name">Seminar_DAM</string>
+    <string name="action_despre">Despre aplicatie</string>
+    <string name="action_adauga">Adauga ceva</string>
+    <string name="introduce_suma">Introduceti suma dorita</string>
+    <string name="introduce_descriere">Descriere tranzactie</string>
+    <string name="introduce_tip">Alegeti tipul tranzactiei</string>
+    <string name="introduce_valuta">Alegeti valuta</string>
+    <string name="adauga_tranzactie">Adauga tranzactie</string>
+    <string name="buton_eur">EUR</string>
+    <string name="buton_ron">RON</string>
+    <string name="lista_tr">Lista tranzactii</string>
+    <string name="adauga_activity_name">Adauga Tranzactie</string>
+    <string name="modifica_activity_name">Modifica Tranzactie</string>
+</resources>

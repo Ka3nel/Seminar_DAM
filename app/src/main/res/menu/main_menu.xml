@@ -1,0 +1,8 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:title="@string/action_despre" android:id="@+id/action_despre" />
+    <item android:title="@string/action_adauga" android:id="@+id/action_adauga"/>
+    <item android:title="Pagina Inregistrari" android:id="@+id/action_inregistrari"/>
+</menu>

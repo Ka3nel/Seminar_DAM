@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        tools:context=".AdaugaActivity">
+
+        <EditText
+            android:id="@+id/et_suma"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:hint="@string/introduce_suma"
+            android:inputType="numberDecimal"
+            app:layout_constraintHorizontal_bias="0.0"/>
+
+        <EditText
+            android:id="@+id/et_descriere"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:width="370dp"
+            android:hint="@string/introduce_descriere"
+            app:layout_constraintHorizontal_bias="0.0" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:text="@string/introduce_tip"
+            android:textSize="17dp" />
+
+        <Spinner
+            android:id="@+id/sp_tranzactie"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="8dp"
+            tools:entries="@array/spinnerItems" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="20dp"
+            android:text="@string/introduce_valuta"
+            android:textSize="17dp" />
+
+        <RadioGroup
+            android:id="@+id/rg_valuta"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="30dp"
+            android:layout_marginTop="10dp"
+            android:orientation="horizontal">
+
+            <RadioButton
+                android:id="@+id/rb_eur"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="@string/buton_eur"
+                tools:layout_editor_absoluteX="195dp"
+                tools:layout_editor_absoluteY="60dp" />
+
+            <RadioButton
+                android:id="@+id/rb_ron"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:text="@string/buton_ron"
+                tools:layout_editor_absoluteX="267dp"
+                tools:layout_editor_absoluteY="68dp" />
+        </RadioGroup>
+
+        <DatePicker
+            android:id="@+id/dp_data"
+            android:layout_width="337dp"
+            android:layout_height="410dp"
+            android:layout_marginStart="30dp"
+            android:ems="10"
+            android:inputType="date" />
+
+        <Button
+            android:id="@+id/btn_adauga"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:text="@string/adauga_tranzactie" />
+
+    </LinearLayout>
+</ScrollView>
