@@ -12,4 +12,12 @@
     <string name="lista_tr">Lista tranzactii</string>
     <string name="adauga_activity_name">Adauga Tranzactie</string>
     <string name="modifica_activity_name">Modifica Tranzactie</string>
+    <string name="importa_xml">Importa XML</string>
+    <string name="importa_json">Importa JSON</string>
+    <string name="salveaza_in_bd">Salveaza in BD</string>
+    <string name="restaureaza_din_bd">Restaureaza din BD</string>
+    <string name="pagina_inregistrari">Pagina Inregistrari</string>
+    <string name="data_inceput">Data Inceput</string>
+    <string name="data_sfarsit">Data Sfarsit</string>
+    <string name="filtreaza_lista">Filtreaza lista</string>
 </resources>

@@ -10,8 +10,11 @@ import android.widget.EditText;
 import android.widget.RadioButton;
 import android.widget.RadioGroup;
 import android.widget.Spinner;
+
+import java.text.SimpleDateFormat;
 import java.util.Calendar;
 import java.util.Date;
+import java.util.Locale;
 
 public class AdaugaActivity extends AppCompatActivity {
 
@@ -70,7 +73,22 @@ public class AdaugaActivity extends AppCompatActivity {
 
             Intent intent = new Intent();
             intent.putExtra("tranzactie", tranzactie);
-            setResult(RESULT_OK,intent);
+
+            if(btnAdauga.getText() == "Salveaza modificari") {  // daca formularul este folosit pentru a modifica o tranzactie
+                                                                // atunci modificam elementul din baza de date
+                tranzactie.setId(tranzactieExistenta.getId());
+                BugetDB.getInstance((getApplicationContext())).
+                        getDaoTranzactie().
+                        update(tranzactie);
+            }
+            else {                                              // daca formularul este folosit pentru a adauga o tranzactie
+                                                                // atunci se adauga elementul in baza de date
+                BugetDB.getInstance(getApplicationContext()).
+                        getDaoTranzactie().
+                        insert(tranzactie);
+            }
+
+            setResult(RESULT_OK, intent);
 
             finish();
         });

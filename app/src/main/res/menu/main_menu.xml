@@ -4,5 +4,9 @@
 
     <item android:title="@string/action_despre" android:id="@+id/action_despre" />
     <item android:title="@string/action_adauga" android:id="@+id/action_adauga"/>
-    <item android:title="Pagina Inregistrari" android:id="@+id/action_inregistrari"/>
+    <item android:title="@string/pagina_inregistrari" android:id="@+id/action_inregistrari"/>
+    <item android:title="@string/importa_xml" android:id="@+id/importa_xml" />
+    <item android:title="@string/importa_json" android:id="@+id/importa_json" />
+    <item android:title="@string/salveaza_in_bd" android:id="@+id/salveazaBD" />
+    <item android:title="@string/restaureaza_din_bd" android:id="@+id/restaureazaBD" />
 </menu>

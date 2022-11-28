@@ -13,20 +13,6 @@
         android:theme="@style/Theme.Seminar_DAM"
         tools:targetApi="31">
         <activity
-            android:name=".Importa_XML"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
-            android:name=".Importa_Json"
-            android:exported="false">
-            <meta-data
-                android:name="android.app.lib_name"
-                android:value="" />
-        </activity>
-        <activity
             android:name=".ListaInregistrari"
             android:exported="false">
             <meta-data
